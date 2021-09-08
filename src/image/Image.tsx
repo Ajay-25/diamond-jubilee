@@ -20,11 +20,10 @@ type ImageProps = {
 const BaseImage = React.forwardRef<HTMLImageElement, ImageProps>(
   (props, ref) => {
     return (
-      <div data-spaceweb="image" style={{ lineHeight: '1px' }}>
+      <div id="image" style={{ lineHeight: '1px' }}>
         <img
           data-testid="image"
           ref={ref}
-          loading="lazy"
           style={{ objectFit: 'contain' }}
           {...props}
         />
