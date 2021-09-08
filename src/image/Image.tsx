@@ -22,7 +22,6 @@ const BaseImage = React.forwardRef<HTMLImageElement, ImageProps>(
     return (
       <div data-spaceweb="image" style={{ lineHeight: "1px" }}>
         <img
-          alt=""
           data-testid="image"
           ref={ref}
           style={{ objectFit: "contain" }}

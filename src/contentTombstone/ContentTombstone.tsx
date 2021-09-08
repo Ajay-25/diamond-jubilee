@@ -17,10 +17,10 @@ type Props = {
 };
 
 const DEFAULT_PROPS = {
-  backgroundColorToken: "#F8F8FA" as const,
-  foregroundColorToken: "#EEEEEE" as const,
+  backgroundColorToken: "#F8F8FA",
+  foregroundColorToken: "#EEEEEE",
   foregroundOpacity: 1,
-  backgroundOpacity: 1
+  backgroundOpacity: 1,
 };
 
 const ContentTombstone = ({
@@ -35,7 +35,7 @@ const ContentTombstone = ({
   foregroundOpacity = DEFAULT_PROPS.foregroundOpacity,
   style,
   rtl,
-  animate = true
+  animate = true,
 }: Props): JSX.Element => {
   return (
     <ContentLoader

@@ -1,3 +1,4 @@
+import React from "react";
 import { ContentTombstone } from "../contentTombstone";
 
 type Props = {
