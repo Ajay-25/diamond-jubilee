@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 //components
-import ImageTombstone from "./ImageTombstone";
+import ImageTombstone from './ImageTombstone';
 
 //utils
-import { _noop } from "../utils";
+import { _noop } from '../utils';
 
 type ImageProps = {
   className?: string;
@@ -20,11 +20,12 @@ type ImageProps = {
 const BaseImage = React.forwardRef<HTMLImageElement, ImageProps>(
   (props, ref) => {
     return (
-      <div data-spaceweb="image" style={{ lineHeight: "1px" }}>
+      <div data-spaceweb="image" style={{ lineHeight: '1px' }}>
         <img
           data-testid="image"
           ref={ref}
-          style={{ objectFit: "contain" }}
+          loading="lazy"
+          style={{ objectFit: 'contain' }}
           {...props}
         />
       </div>
@@ -32,7 +33,7 @@ const BaseImage = React.forwardRef<HTMLImageElement, ImageProps>(
   }
 );
 
-BaseImage.displayName = "Image";
+BaseImage.displayName = 'Image';
 
 const _Image = (props: ImageProps): React.ReactElement => {
   const { src, ...restProps } = props;

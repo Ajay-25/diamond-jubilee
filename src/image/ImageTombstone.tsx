@@ -1,5 +1,5 @@
-import React from "react";
-import { ContentTombstone } from "../contentTombstone";
+import React from 'react';
+import { ContentTombstone } from '../contentTombstone';
 
 type Props = {
   width: number | string;
@@ -13,8 +13,8 @@ const ImageTombstone = ({ width, height, className, style }: Props) => {
     <div
       id="tombstone"
       style={{
-        width: width ? `${width}px` : "100%",
-        height: "400px"
+        width: width ? `${width}px` : '100%',
+        height: '400px',
       }}
     >
       <ContentTombstone

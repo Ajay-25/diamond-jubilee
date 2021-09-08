@@ -1,5 +1,5 @@
-import React, { CSSProperties, memo } from "react";
-import ContentLoader from "react-content-loader";
+import React, { CSSProperties, memo } from 'react';
+import ContentLoader from 'react-content-loader';
 
 type Props = {
   className?: string;
@@ -17,8 +17,8 @@ type Props = {
 };
 
 const DEFAULT_PROPS = {
-  backgroundColorToken: "#F8F8FA",
-  foregroundColorToken: "#EEEEEE",
+  backgroundColorToken: '#F8F8FA',
+  foregroundColorToken: '#EEEEEE',
   foregroundOpacity: 1,
   backgroundOpacity: 1,
 };
@@ -45,7 +45,7 @@ const ContentTombstone = ({
       width={width}
       viewBox={
         viewBox ||
-        (typeof width === "number" && typeof height === "number"
+        (typeof width === 'number' && typeof height === 'number'
           ? `0 0 ${width} ${height}`
           : undefined)
       }
@@ -54,7 +54,7 @@ const ContentTombstone = ({
       foregroundOpacity={foregroundOpacity}
       backgroundOpacity={backgroundOpacity}
       className={className}
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: 'block' }}
       rtl={rtl}
     >
       {children}

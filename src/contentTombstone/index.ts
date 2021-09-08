@@ -1,1 +1,1 @@
-export { default as ContentTombstone } from "./ContentTombstone";
+export { default as ContentTombstone } from './ContentTombstone';
