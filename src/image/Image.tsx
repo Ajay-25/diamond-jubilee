@@ -15,40 +15,62 @@ type ImageProps = {
   srcset?: string;
   width: number | string;
   style?: Object;
+  isLoaded?: (loaded: boolean) => void;
+  cache: Object;
+  index: number;
+  count: number;
 };
 
-const BaseImage = React.forwardRef<HTMLImageElement, ImageProps>(
-  (props, ref) => {
-    return (
-      <div id="image" style={{ lineHeight: '1px' }}>
-        <img
-          data-testid="image"
-          ref={ref}
-          style={{ objectFit: 'contain' }}
-          {...props}
-        />
-      </div>
-    );
-  }
-);
+const BaseImage = React.forwardRef<
+  HTMLImageElement,
+  Omit<ImageProps, 'cache' | 'index' | 'count'>
+>((props, ref) => {
+  return (
+    <div id="image" style={{ lineHeight: '1px' }}>
+      <img
+        data-testid="image"
+        ref={ref}
+        style={{ objectFit: 'contain' }}
+        {...props}
+      />
+    </div>
+  );
+});
 
 BaseImage.displayName = 'Image';
 
 const _Image = (props: ImageProps): React.ReactElement => {
-  const { src, ...restProps } = props;
+  const { src, isLoaded, index, count, cache, ...restProps } = props;
   const [imageLoaded, setImageLoaded] = React.useState<boolean>(false);
+  const [shouldRender, setShouldRender] = React.useState(false);
 
+  React.useEffect(() => {
+    const _shouldRender =
+      index < count - 2
+        ? cache[index] && cache[index + 1] && cache[index + 2]
+        : true;
+    setShouldRender(_shouldRender);
+  }, [cache]);
+
+  React.useEffect(() => {}, []);
   React.useEffect(() => {
     if (!src) {
       setImageLoaded(true);
+      isLoaded?.(true);
       return _noop;
     }
 
     setImageLoaded(false);
     const img = new Image();
     img.src = src;
-    img.onload = (): void => setImageLoaded(true);
-    img.onerror = (): void => setImageLoaded(true);
+    img.onload = (): void => {
+      setImageLoaded(true);
+      isLoaded?.(true);
+    };
+    img.onerror = (): void => {
+      setImageLoaded(true);
+      isLoaded?.(true);
+    };
 
     return (): void => {
       img.onload = _noop;
@@ -56,7 +78,7 @@ const _Image = (props: ImageProps): React.ReactElement => {
     };
   }, [src]);
 
-  return imageLoaded ? (
+  return imageLoaded && shouldRender ? (
     <BaseImage src={src} {...restProps} />
   ) : (
     <ImageTombstone {...restProps} />
