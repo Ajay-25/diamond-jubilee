@@ -16,7 +16,7 @@ const Page = ({ imageUrls }: Props) => {
   );
 
   return (
-    <div>
+    <div style={{ padding: '4px 8px' }}>
       {imageUrls.map((url, index) => {
         const isLoaded = () => {
           updateCache(index);
@@ -33,6 +33,7 @@ const Page = ({ imageUrls }: Props) => {
             cache={cache}
             index={index}
             count={imageUrls.length}
+            style={{ margin: '4px 0' }}
           />
         );
       })}

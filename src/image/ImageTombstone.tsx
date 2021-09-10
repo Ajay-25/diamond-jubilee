@@ -12,9 +12,9 @@ const ImageTombstone = ({ width, height, className, style }: Props) => {
   return (
     <div
       id="tombstone"
+      className="imageTombstone"
       style={{
         width: width ? `${width}px` : '100%',
-        height: '400px',
       }}
     >
       <ContentTombstone

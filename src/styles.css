@@ -20,3 +20,32 @@ body,
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .imageTombstone {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  .imageTombstone {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 980px) {
+  .imageTombstone {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+  .imageTombstone {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .imageTombstone {
+    height: 800px;
+  }
+}
