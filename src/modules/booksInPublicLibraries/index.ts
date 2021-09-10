@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './BooksInPublicLibraries';
+export { BooksInPublicLibraries } from './BooksInPublicLibraries';

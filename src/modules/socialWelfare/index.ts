@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './SocialWelfare';
+export { SocialWelfare } from './SocialWelfare';

@@ -4,8 +4,8 @@ import React from 'react';
 import Page from '../../components/Page';
 
 //constants
-import { IMAGE_URLS } from '../../constants/darshanAcademyImages';
+import { IMAGE_URLS } from '../../constants/audioVideoInsightsImages';
 
-const DarshanAcademy = () => <Page imageUrls={IMAGE_URLS} />;
+const AudioVideoInsights = () => <Page imageUrls={IMAGE_URLS} />;
 
-export { DarshanAcademy };
+export { AudioVideoInsights };

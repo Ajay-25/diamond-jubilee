@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './OutreachWorkshops';
+export { OutreachWorkshops } from './OutreachWorkshops';

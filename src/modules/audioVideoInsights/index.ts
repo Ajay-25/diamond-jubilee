@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './AudioVideoInsights';
+export { AudioVideoInsights } from './AudioVideoInsights';

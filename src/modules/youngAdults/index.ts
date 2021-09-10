@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './YoungAdults';
+export { YoungAdults } from './YoungAdults';

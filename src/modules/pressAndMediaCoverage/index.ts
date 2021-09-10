@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './PressAndMediaCoverage';
+export { PressAndMediaCoverage } from './PressAndMediaCoverage';

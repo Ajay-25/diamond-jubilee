@@ -1,1 +1,1 @@
-export { DarshanAcademy } from './BookFairs';
+export { BookFairs } from './BookFairs';
