@@ -45,10 +45,7 @@ const _Image = (props: ImageProps): React.ReactElement => {
   const [shouldRender, setShouldRender] = React.useState(false);
 
   React.useEffect(() => {
-    const _shouldRender =
-      index < count - 2
-        ? cache[index] && cache[index + 1] && cache[index + 2]
-        : true;
+    const _shouldRender = index > 0 ? cache[index] && cache[index - 1] : true;
     setShouldRender(_shouldRender);
   }, [cache]);
 
