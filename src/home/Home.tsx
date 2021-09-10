@@ -1,42 +1,33 @@
 import React from 'react';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 
 //components
-import { Image } from '../image';
+import { DarshanAcademy } from '../modules/darshanAcademy';
+import { WelfareDuringCovidWaveTwo } from '../modules/welfareDuringCovidWaveTwo';
+import { AppreciationLetters } from '../modules/appreciationLetters';
 
-//constants
-import { IMAGE_ORDER, IMAGE_URLS } from '../constants/darshanAcademyImages';
+const DefaultPage = () => null;
 
 const Home = () => {
-  const [cache, setCache] = React.useState({});
-
-  const updateCache = React.useCallback(
-    (index) => setCache((prevState) => ({ ...prevState, [index]: true })),
-    []
-  );
-
   return (
-    <div>
-      {IMAGE_ORDER.map((order, index) => {
-        const src = IMAGE_URLS[String(order)];
-        const isLoaded = () => {
-          updateCache(index);
-        };
-
-        return (
-          <Image
-            src={src}
-            width="100%"
-            height="100%"
-            alt="darshan academy"
-            key={src}
-            isLoaded={isLoaded}
-            cache={cache}
-            index={index}
-            count={IMAGE_ORDER.length}
-          />
-        );
-      })}
-    </div>
+    <Router>
+      <Switch>
+        [
+        <Route path="/darshan-academy">
+          <DarshanAcademy />
+        </Route>
+        <Route path="/welfare-in-covid-wave-2">
+          <WelfareDuringCovidWaveTwo />
+        </Route>
+        <Route path="/appreciation-letters">
+          <AppreciationLetters />
+        </Route>
+        <Route path="/">
+          <DefaultPage />
+        </Route>
+        ]
+      </Switch>
+    </Router>
   );
 };
 
