@@ -14,6 +14,7 @@ import { PressAndMediaCoverage } from '../modules/pressAndMediaCoverage';
 import { SocialWelfare } from '../modules/socialWelfare';
 import { YoungAdults } from '../modules/youngAdults';
 import { GlimpsesOfMastersLives } from '../modules/glimpsesOfMastersLives';
+import { SKRMZones } from '../modules/skrmZones';
 
 const DefaultPage = () => null;
 
@@ -57,6 +58,9 @@ const Home = () => {
         </Route>
         <Route path="/glimps-of-masters-life">
           <GlimpsesOfMastersLives />
+        </Route>
+        <Route path="/SKRM-Zones">
+          <SKRMZones />
         </Route>
         <Route path="/">
           <DefaultPage />
