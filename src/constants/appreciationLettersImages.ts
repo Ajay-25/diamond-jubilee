@@ -38,6 +38,10 @@ const PAGE_19 =
   'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/appreciationLetters/19.jpg';
 const PAGE_20 =
   'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/appreciationLetters/20.jpg';
+const PAGE_21 =
+  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/appreciationLetters/21.jpg';
+const PAGE_22 =
+  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/appreciationLetters/22.jpg';
 
 export const IMAGE_URLS = [
   PAGE_1,
@@ -60,4 +64,6 @@ export const IMAGE_URLS = [
   PAGE_18,
   PAGE_19,
   PAGE_20,
+  PAGE_21,
+  PAGE_22,
 ];
