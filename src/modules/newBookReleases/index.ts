@@ -1,0 +1,1 @@
+export { NewBookReleases } from './NewBookReleases';

@@ -15,6 +15,7 @@ import { SocialWelfare } from '../modules/socialWelfare';
 import { YoungAdults } from '../modules/youngAdults';
 import { GlimpsesOfMastersLives } from '../modules/glimpsesOfMastersLives';
 import { SKRMZones } from '../modules/skrmZones';
+import { NewBookReleases } from '../modules/newBookReleases';
 
 //components - videos
 import { TreePlantationInitiative } from '../modules/treePlantationInitiative';
@@ -131,6 +132,9 @@ const Home = () => {
         </Route>
         <Route path="/welfare-activities">
           <WelfareActivities />
+        </Route>
+        <Route path="/new-book-releases">
+          <NewBookReleases />
         </Route>
         <Route path="/">
           <DefaultPage />
