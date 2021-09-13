@@ -35,6 +35,7 @@ import { SilaiCenters } from '../modules/silaiCenters';
 import { ActivitiesDuringCovid } from '../modules/activitiesDuringCovid';
 import { MaharajJiTourToBahrain } from '../modules/maharajJiTourToBahrain';
 import { MaharajJiTourToUAE } from '../modules/maharajJiTourToUAE';
+import { TreePlantationDrive } from '../modules/treePlantationDrive';
 
 const DefaultPage = () => null;
 
@@ -135,6 +136,9 @@ const Home = () => {
         </Route>
         <Route path="/new-book-releases">
           <NewBookReleases />
+        </Route>
+        <Route path="/tree-plantation-drive">
+          <TreePlantationDrive />
         </Route>
         <Route path="/">
           <DefaultPage />
