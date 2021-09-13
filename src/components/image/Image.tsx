@@ -4,7 +4,7 @@ import React from 'react';
 import ImageTombstone from './ImageTombstone';
 
 //utils
-import { _noop } from '../utils';
+import { _noop } from '../../utils';
 
 type ImageProps = {
   className?: string;

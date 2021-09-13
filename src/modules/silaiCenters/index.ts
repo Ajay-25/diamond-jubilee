@@ -1,0 +1,1 @@
+export { SilaiCenters } from './SilaiCenters';

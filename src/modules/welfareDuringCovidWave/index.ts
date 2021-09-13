@@ -1,0 +1,1 @@
+export { WelfareDuringCovidWave } from './WelfareDuringCovidWave';

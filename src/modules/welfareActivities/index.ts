@@ -1,0 +1,1 @@
+export { WelfareActivities } from './WelfareActivities';

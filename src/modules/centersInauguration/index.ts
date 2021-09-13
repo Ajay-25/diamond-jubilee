@@ -1,0 +1,1 @@
+export { CentersInauguration } from './CentersInauguration';

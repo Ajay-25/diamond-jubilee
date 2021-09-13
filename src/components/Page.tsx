@@ -1,7 +1,7 @@
 import React from 'react';
 
 //components
-import { Image } from '../image';
+import { Image } from './image';
 
 type Props = {
   imageUrls: string[];
