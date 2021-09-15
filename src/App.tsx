@@ -1,4 +1,5 @@
 import React from 'react';
+import Confetti from 'react-confetti';
 
 import './styles.css';
 
@@ -20,6 +21,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <Confetti recycle={false} numberOfPieces={800} tweenDuration={8000} />
       <Home />
     </div>
   );
