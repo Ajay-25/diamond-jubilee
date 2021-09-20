@@ -38,6 +38,12 @@ const PAGE_19 =
   'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/19.jpg';
 const PAGE_20 =
   'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/20.jpg';
+const PAGE_21 =
+  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/21.jpg';
+const PAGE_22 =
+  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/22.jpg';
+const PAGE_23 =
+  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/23.jpg';
 
 export const IMAGE_URLS = [
   PAGE_1,
@@ -60,4 +66,7 @@ export const IMAGE_URLS = [
   PAGE_18,
   PAGE_19,
   PAGE_20,
+  PAGE_21,
+  PAGE_22,
+  PAGE_23,
 ];
