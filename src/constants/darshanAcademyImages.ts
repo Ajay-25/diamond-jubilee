@@ -44,22 +44,6 @@ const PAGE_22 =
   'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/22.jpg';
 const PAGE_23 =
   'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/23.jpg';
-const PAGE_24 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/24.jpg';
-const PAGE_25 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/25.jpg';
-const PAGE_26 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/26.jpg';
-const PAGE_27 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/27.jpg';
-const PAGE_28 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/28.jpg';
-const PAGE_29 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/29.jpg';
-const PAGE_30 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/30.jpg';
-const PAGE_31 =
-  'https://raw.githubusercontent.com/Ajay-25/diamond-jubilee/main/assets/darshanAcademy/31.jpg';
 
 export const IMAGE_URLS = [
   PAGE_1,
@@ -85,12 +69,4 @@ export const IMAGE_URLS = [
   PAGE_21,
   PAGE_22,
   PAGE_23,
-  PAGE_24,
-  PAGE_25,
-  PAGE_26,
-  PAGE_27,
-  PAGE_28,
-  PAGE_29,
-  PAGE_30,
-  PAGE_31,
 ];
