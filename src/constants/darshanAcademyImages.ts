@@ -66,7 +66,7 @@ export const IMAGE_URLS = [
   PAGE_18,
   PAGE_19,
   PAGE_20,
-  PAGE_21,
-  PAGE_22,
-  PAGE_23,
+  // PAGE_21,
+  // PAGE_22,
+  // PAGE_23,
 ];
